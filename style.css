@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* NAVIGATION SECTION */
+#container{
+    z-index: 3;
+    min-height: 10vh;
+}
+nav{
+    background-color: aqua;
+    color: black;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 50px;
+}
+.logo-text h2{
+    font-weight: 300;
+    
+}
+nav ul li:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+/* HOME SECTION */
+
+.home{
+    min-height: 100vh;
+    background: url(shair1.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(210, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home h1{
+    font-size: 100px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.home h5{
+    padding: 2rem;
+    color: black;
+}
+.home button{
+    padding: 1rem 6rem;
+    font-size: larger;
+    background: aqua;
+    
+}
+.home button:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    min-height: 100vh;
+}
+.tittle-text{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(210, 247, 247);
+}
+.tittle-text p{
+    margin: auto;
+    font-size: 20px;
+    color: aqua;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    position: static;
+}
+.abouts h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 3rem;
+    color: aqua;   
+}
+.about-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.about-head {
+    background:  rgb(210, 247, 247);
+    padding: 3rem;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+/* SERVICES SECTION */
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: white;
+}
+.service-box{
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+   flex-basis: 48%;
+   text-align:center;
+   border-radius: 7px;
+   margin-bottom: 20px;
+   color: #fff;
+   background-color:  rgb(210, 247, 247);
+
+}
+.single-service img{
+    width: 30%;
+    border-radius: 7px;
+}
+
+/* CONTACT SECTION */
+#contact{
+    min-height:50vh ;
+}
+.tittle-leep{
+    text-align: center;
+    padding: 1rem;
+}
+.tittle-leep p{
+    margin: auto;
+    font-size: 20px;
+    color: aqua;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    position: static;
+}
+.responsive-form{
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 2rem;
+    background-color: aqua;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.responsive-form label{
+    display: block;
+    margin-bottom: 20px;
+}
+.dave{
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.dave input{
+    height: 40px;
+    width: 20rem;
+}
+.dave button{
+    width: 100%;
+    padding: 10px;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Foooter Section */
+
+footer {
+    color: black;
+    background: aqua;
+}
+.footer-wrapper {
+    display: flex;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+footer h5 {
+    flex: 1 1 40rem;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 412px) {
+    .responsive-form{
+        width: 90%;
+        padding: 1rem;
+    }
+    .responsive-form label{
+        margin-bottom: 10px;
+    }
+    .dave{
+        padding: 1rem;
+    }
+    .dave input{
+        height: 35px;
+        width: 15rem;
+    }
+    .home button{
+        padding: 0.5rem 3rem;
+    }
+    
+}
